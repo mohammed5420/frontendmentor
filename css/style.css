@@ -68,6 +68,7 @@ html {
 .product_cta {
   display: block;
   border: none;
+  cursor: pointer;
   background-color: var(--dark-cyan);
   color: white;
   border-radius: 10px;
