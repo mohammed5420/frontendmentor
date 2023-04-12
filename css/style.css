@@ -30,6 +30,7 @@ html {
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
+  width: 100%;
   max-width: 23.4375rem;
 }
 
@@ -51,11 +52,15 @@ html {
   font-family: "Fraunces", serif;
   color: hsl(212, 21%, 14%);
 }
+.product_text {
+  line-height: 1.5;
+}
 
 .new {
   font-size: 2rem;
   color: var(--dark-cyan);
   font-family: "Fraunces", serif;
+  vertical-align: middle;
   margin-right: 2rem;
 }
 
@@ -78,13 +83,36 @@ html {
 }
 
 .product_cta:hover {
-  background-color: hsl(212, 21%, 14%);
+  background-color: hsl(159, 37%, 22%);
 }
 
 .product_cta img {
   width: 14px;
   margin-right: 10px;
+  vertical-align: middle;
 }
+
 .product_cta span {
   font-weight: 700;
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 1440px) {
+  .product {
+    max-width: 550px;
+  }
+  .product_image {
+    float: left;
+    width: 50%;
+    max-height: 430px;
+  }
+
+  .product_image img {
+    min-height: 435px;
+  }
+
+  .product_description {
+    float: right;
+    width: 50%;
+  }
 }
